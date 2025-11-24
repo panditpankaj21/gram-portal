@@ -11,9 +11,9 @@ const navItems = [
   { label: "Gallery", href: "/gallery" },
   { label: "Development Works", href: "/vikas-kame" },
   { label: "Survey Information", href: "/sabhechi-mahiti" },
-  { label: "Birth Certificate", href: "/janam-dakhala" },
-  { label: "Death Certificate", href: "/mrutyu-dakhala" },
-  { label: "Marriage Certificate", href: "/vivah-dakhala" },
+  { label: "Birth Certificate", href: "/birth-certificate" },
+  { label: "Death Certificate", href: "/death-certificate" },
+  { label: "Marriage Certificate", href: "/marriage-certificate" },
   { label: "Surpanch Office", href: "/surpanch-karyala" },
   { label: "Deputy Surpanch Office", href: "/up-surpanch-karyala" },
   { label: "Executive Members", href: "/sadasya-karyakari" },
@@ -81,7 +81,7 @@ export default function MainMenu() {
             <Link
               key={item.label}
               href={item.href}
-              className="block py-2 border-b border-blue-800 hover:text-yellow-300 font-medium"
+              className="block mt-5 hover:text-blue-300 font-medium"
               onClick={() => setIsOpen(false)}
             >
               {item.label}
