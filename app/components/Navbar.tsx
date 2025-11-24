@@ -2,6 +2,7 @@
 
 import GoogleTranslate from "./GoogleTranslate";
 import { useState } from "react";
+import NotificationBanner from "./NotificationBanner";
 
 export default function Navbar() {
   const [fontSize, setFontSize] = useState("base");
@@ -67,6 +68,7 @@ export default function Navbar() {
           महाराष्ट्रातील एकमेव ग्रामपंचायत उपक्रम
         </p>
       </div>
+      <NotificationBanner/>
     </header>
   );
 }

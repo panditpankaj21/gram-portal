@@ -1,12 +1,13 @@
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import SurpanchTable from './components/SurpanchTable';
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar/>
       <main className="flex-grow">
-        <h1 className='text-2xl text-red-500'>Hello, Goverment</h1>
+        <SurpanchTable/>
       </main> 
       <Footer/>
     </div>

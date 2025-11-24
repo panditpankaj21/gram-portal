@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div className="flex justify-center gap-7 flex-wrap mt-8 px-4">
-            <Image src="/logos/swacch-Bharat.png" alt="Swachh Bharat" width={60} height={100} className="bg-white rounded shadow"/>
+            <Image src="/logos/Swacch-Bharat.png" alt="Swachh Bharat" width={60} height={100} className="bg-white rounded shadow"/>
             <Image src="/logos/Digital-India.png" alt="Digital India" width={60} height={100} className="bg-white rounded shadow"/>
             <Image src="/logos/beti-bacho.png" alt="Beti Bacho Beti Padao" width={60} height={100} className="bg-white rounded shadow"/>
             <Image src="/logos/satyamev.png" alt="Satyamev Jayete" width={60} height={100} className="bg-white rounded shadow"/>
