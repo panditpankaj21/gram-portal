@@ -27,7 +27,7 @@ export default function MainMenu() {
     <nav className="bg-[#1C5FAF] text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-14">
-          <div className="text-lg font-bold">ग्रामपंचायत कोतवालबर्डी</div>
+          <div className="text-lg font-bold">Gram Panchayat Sonoli</div>
 
           <div className="hidden xl:flex flex-wrap gap-4 justify-center items-center">
             {navItems.map((item) => (

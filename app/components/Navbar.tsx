@@ -53,15 +53,15 @@ export default function Navbar() {
 
       <div className="px-4 py-3 text-center">
         <h1 className="text-xl font-bold text-gray-900 tracking-wide leading-tight">
-          ग्रामपंचायत कोतवालबर्डी
+          Gram Panchyat Sonoli
         </h1>
 
         <p className="text-[15px] text-gray-700 leading-tight mt-1">
-          पंचायत समिती काटोल, जिल्हा परिषद नागपूर
+          Panchayat Katol District Council Nagpur
         </p>
 
         <p className="text-[14px] text-gray-600 mt-1">
-          महाराष्ट्रातील एकमेव ग्रामपंचायत उपक्रम
+          All Gram Panchayat initiatives in Maharashtra
         </p>
       </div>
       <MainMenu/>
