@@ -2,13 +2,13 @@
 
 @layer utilities {
   @keyframes marquee {
-    0% { transform: translateX(100%); }
+    0% { transform: translateX(50%); }
     100% { transform: translateX(-100%); }
   }
 
   .animate-marquee {
     display: inline-block;
     min-width: 100%;
-    animation: marquee 25s linear infinite;
+    animation: marquee 19s linear infinite;
   }
 }

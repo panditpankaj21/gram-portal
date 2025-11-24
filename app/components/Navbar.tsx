@@ -3,6 +3,7 @@
 import GoogleTranslate from "./GoogleTranslate";
 import { useState } from "react";
 import NotificationBanner from "./NotificationBanner";
+import MainMenu from "./MainMenu";
 
 export default function Navbar() {
   const [fontSize, setFontSize] = useState("base");
@@ -20,15 +21,11 @@ export default function Navbar() {
   };
 
   return (
-    <header className="w-full bg-white border-b shadow-sm">
-      {/* Top Strip */}
+    <header className="w-full bg-white shadow-sm">
       <div className="w-full bg-[#1C5FAF] text-white text-sm py-1 px-4 flex justify-between items-center">
-        {/* Left: Government Label */}
         <span>भारत सरकार • Government of India</span>
 
-        {/* Right: Text Size + Translate */}
         <div className="flex items-center space-x-3">
-          {/* A+, A, A- Buttons */}
           <div className="flex items-center space-x-1">
             <button
               onClick={() => changeFont("large")}
@@ -54,7 +51,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Main Heading */}
       <div className="px-4 py-3 text-center">
         <h1 className="text-xl font-bold text-gray-900 tracking-wide leading-tight">
           ग्रामपंचायत कोतवालबर्डी
@@ -68,6 +64,7 @@ export default function Navbar() {
           महाराष्ट्रातील एकमेव ग्रामपंचायत उपक्रम
         </p>
       </div>
+      <MainMenu/>
       <NotificationBanner/>
     </header>
   );
