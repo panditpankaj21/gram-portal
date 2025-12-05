@@ -37,7 +37,7 @@ export default function GoogleTranslate() {
         <option value="mr" className="bg-white text-black rounded px-4 py-2 border shadow">मराठी</option>
       </select>
 
-      <div id="google_translate_element" style={{ display: "none" }} />
+      <div id="google_translate_element" style={{ visibility: "hidden"}} />
 
       <Script
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
@@ -45,10 +45,29 @@ export default function GoogleTranslate() {
       />
 
       <style jsx global>{`
-        .goog-te-banner-frame,
-        .goog-te-menu-frame,
+        .goog-te-banner-frame {
+          display: none !important;
+          visibility: hidden !important;
+        }
+        .goog-te-menu-frame {
+          display: none !important;
+          visibility: hidden !important;
+        }
+        .goog-logo-link {
+          display: none !important;
+        }
         .goog-te-gadget {
           display: none !important;
+        }
+        #goog-gt-tt {
+          display: none !important;
+          visibility: hidden !important;
+        }
+        body {
+          top: 0 !important;
+        }
+        .skiptranslate {
+          visibility: hidden !important;
         }
       `}</style>
     </div>

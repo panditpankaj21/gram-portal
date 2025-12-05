@@ -23,9 +23,8 @@ const BirthCertificateForm: React.FC = () => {
 
   const [birthCollection, setBirthCollection] = useState<BirthData[]>([]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,40 +39,81 @@ const BirthCertificateForm: React.FC = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto px-4 py-6">
-      <h2 className="text-2xl font-bold text-[#1C5FAF] mb-4 text-center">
-        Birth Certificate Form
+    <div className="max-w-2xl mx-auto px-4 py-8">
+      {/* Header */}
+      <h2 className="text-3xl font-bold text-center text-[#0B5AA3] mb-6 tracking-wide">
+        जन्म प्रमाणपत्र फॉर्म<br />
+        <span className="text-lg text-gray-600">
+          Birth Certificate Application
+        </span>
       </h2>
 
-      <form onSubmit={handleSubmit} className="bg-white p-4 rounded-lg shadow-md">
-        <Input label="Name" name="name" value={formData.name} onChange={handleChange} />
-        <Input label="Father's Name" name="father_name" value={formData.father_name} onChange={handleChange} />
-        <Input label="Mother's Name" name="mother_name" value={formData.mother_name} onChange={handleChange} />
-        <Input label="Date of Birth" name="date_of_birth" type="date" value={formData.date_of_birth} onChange={handleChange} />
-        <Input label="Birth Place" name="birth_place" value={formData.birth_place} onChange={handleChange} />
-        <div className="mt-4 flex justify-center">
-          <Button label="Submit" />
+      {/* Form Card */}
+      <form
+        onSubmit={handleSubmit}
+        className="bg-white border border-gray-200 p-6 rounded-xl shadow-lg shadow-blue-50"
+      >
+        <div className="grid grid-cols-1 gap-4">
+          <Input
+            label="Child's Name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <Input
+            label="Father's Name"
+            name="father_name"
+            value={formData.father_name}
+            onChange={handleChange}
+          />
+          <Input
+            label="Mother's Name"
+            name="mother_name"
+            value={formData.mother_name}
+            onChange={handleChange}
+          />
+          <Input
+            label="Date of Birth"
+            name="date_of_birth"
+            type="date"
+            value={formData.date_of_birth}
+            onChange={handleChange}
+          />
+          <Input
+            label="Place of Birth"
+            name="birth_place"
+            value={formData.birth_place}
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="mt-6 flex justify-center">
+          <Button label="Submit Application" />
         </div>
       </form>
 
+      {/* Submitted Records Section */}
       {birthCollection.length > 0 && (
-        <div className="mt-8">
-          <h3 className="text-xl font-semibold text-[#1C5FAF] mb-4 text-center">
+        <div className="mt-12">
+          <h3 className="text-2xl font-semibold text-center text-[#0B5AA3] mb-6">
             Submitted Birth Records
           </h3>
-          <div className="space-y-4">
+
+          <div className="space-y-5">
             {birthCollection.map((entry, index) => (
               <div
                 key={index}
-                className="bg-blue-50 border border-blue-200 rounded-lg p-4 shadow-sm"
+                className="bg-[#F1F5FB] border-l-4 border-[#0B5AA3] rounded-lg p-5 shadow-sm"
               >
-                <p className="text-sm text-gray-600 mb-2">Record #{index + 1}</p>
-                <ul className="space-y-1 text-gray-800 text-sm sm:text-base">
-                  <li><strong>Name:</strong> {entry.name}</li>
+                <p className="text-sm text-gray-500 mb-2 font-medium">
+                  Record #{index + 1}
+                </p>
+                <ul className="space-y-1 text-gray-800 text-base">
+                  <li><strong>Child Name:</strong> {entry.name}</li>
                   <li><strong>Father's Name:</strong> {entry.father_name}</li>
                   <li><strong>Mother's Name:</strong> {entry.mother_name}</li>
                   <li><strong>Date of Birth:</strong> {entry.date_of_birth}</li>
-                  <li><strong>Birth Place:</strong> {entry.birth_place}</li>
+                  <li><strong>Place of Birth:</strong> {entry.birth_place}</li>
                 </ul>
               </div>
             ))}

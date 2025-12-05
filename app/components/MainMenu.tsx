@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 const navItems = [
@@ -25,11 +25,11 @@ export default function MainMenu() {
 
   return (
     <nav className="bg-[#1C5FAF] text-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="px-5 mx-auto" >
         <div className="flex justify-between items-center h-14">
           <div className="text-lg font-bold">Gram Panchayat Sonoli</div>
 
-          <div className="hidden xl:flex flex-wrap gap-4 justify-center items-center">
+          <div className="hidden flex-wrap gap-4 justify-center items-center">
             {navItems.map((item) => (
               <Link
                 key={item.label}
@@ -41,10 +41,10 @@ export default function MainMenu() {
             ))}
           </div>
 
-          <div className="xl:hidden">
+          <div className="">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="focus:outline-none"
+              className="focus:outline-none cursor-pointer"
               aria-label="Toggle Menu"
             >
               <svg
@@ -76,12 +76,15 @@ export default function MainMenu() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="xl:hidden bg-[#1C5FAF] px-4 pb-4 space-y-2">
-          {navItems.map((item) => (
+        <div className="bg-[#1C5FAF] px-4 pb-4 space-y-2 md:grid md:grid-cols-4 md:space-y-0">
+          {navItems.map((item, index) => (
             <Link
               key={item.label}
               href={item.href}
-              className="block mt-5 hover:text-blue-300 font-medium"
+              className={`block mt-5 hover:text-blue-300 font-medium
+              md:border-l-2 md:border-white/10 md:pl-2
+              ${index === navItems.length - 1 ? "md:border-r-0" : ""}
+              `}
               onClick={() => setIsOpen(false)}
             >
               {item.label}
