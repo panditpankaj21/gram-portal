@@ -1,7 +1,17 @@
-import SurpanchTable from './components/SurpanchTable';
+import AboutSection from './components/AboutSection';
+import ComplaintFormSection from './components/ComplaintFormSection';
+import GrampanchayatTabs from './components/GrampanchayatTab';
+import SarpanchSection from './components/SarpanchSection';
+import YojanaSection from './components/YojnaSection';
 
 export default function Home() {
   return (
-    <SurpanchTable/>
+    <div>
+      <AboutSection/>
+      <SarpanchSection/>
+      <GrampanchayatTabs/>
+      <YojanaSection/>
+      <ComplaintFormSection/>
+    </div>
   );
 }
