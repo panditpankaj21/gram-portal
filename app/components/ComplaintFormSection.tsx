@@ -27,33 +27,23 @@ export default function ComplaintFormSection() {
   };
 
   return (
-    <section className="relative bg-[#e8f1ff] py-20 sm:py-24 px-4">
-      {/* Soft Wave Top */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          className="block w-full h-12"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-        >
-          <path d="M-2 8C294 70 459 -56 802 7V72H-2V8Z" fill="#fff" />
-        </svg>
-      </div>
-
-      <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-xl rounded-[30px] shadow-[0_8px_35px_rgba(0,0,0,0.1)] p-8 sm:p-14 border border-[#1C5FAF]/10 relative z-10">
+    <section className="relative bg-[#e8f1ff] py-14 sm:py-16 px-4">
+      
+      <div className="max-w-2xl mx-auto bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg p-6 sm:p-8 border border-[#1C5FAF]/10">
 
         {/* HEADER */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl font-extrabold text-[#1C5FAF] tracking-wide drop-shadow">
+        <div className="text-center mb-6">
+          <h2 className="text-xl sm:text-2xl font-extrabold text-[#1C5FAF]">
             ग्रामपंचायत तक्रार पोर्टल
           </h2>
-          <p className="mt-3 text-gray-700 text-base sm:text-lg">
-            तुमची समस्या आमच्यासाठी महत्त्वाची आहे. कृपया खालील तपशील भरा
+          <p className="mt-1 text-gray-600 text-sm">
+            आपला अभिप्राय आमच्यासाठी महत्त्वाचा आहे
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-4">
 
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             <input
               type="text"
               name="name"
@@ -61,7 +51,7 @@ export default function ComplaintFormSection() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full p-4 rounded-xl border border-gray-300 bg-white shadow-sm focus:ring-4 focus:ring-blue-300 focus:border-[#1C5FAF] transition-all"
+              className="w-full p-3 rounded-lg border border-gray-300 bg-white focus:ring-2 focus:ring-blue-300 focus:border-[#1C5FAF] transition-all text-sm"
             />
 
             <input
@@ -71,7 +61,7 @@ export default function ComplaintFormSection() {
               value={formData.mobile}
               onChange={handleChange}
               required
-              className="w-full p-4 rounded-xl border border-gray-300 bg-white shadow-sm focus:ring-4 focus:ring-blue-300 focus:border-[#1C5FAF] transition-all"
+              className="w-full p-3 rounded-lg border border-gray-300 bg-white focus:ring-2 focus:ring-blue-300 focus:border-[#1C5FAF] transition-all text-sm"
             />
           </div>
 
@@ -82,7 +72,7 @@ export default function ComplaintFormSection() {
             value={formData.subject}
             onChange={handleChange}
             required
-            className="w-full p-4 rounded-xl border border-gray-300 bg-white shadow-sm focus:ring-4 focus:ring-blue-300 focus:border-[#1C5FAF] transition-all"
+            className="w-full p-3 rounded-lg border border-gray-300 bg-white focus:ring-2 focus:ring-blue-300 focus:border-[#1C5FAF] transition-all text-sm"
           />
 
           <textarea
@@ -91,12 +81,12 @@ export default function ComplaintFormSection() {
             value={formData.message}
             onChange={handleChange}
             required
-            rows={6}
-            className="w-full p-4 rounded-xl border border-gray-300 bg-white shadow-sm focus:ring-4 focus:ring-blue-300 focus:border-[#1C5FAF] transition-all resize-none"
+            rows={4}
+            className="w-full p-3 rounded-lg border border-gray-300 bg-white focus:ring-2 focus:ring-blue-300 focus:border-[#1C5FAF] transition-all resize-none text-sm"
           />
 
-          {/* FILE ATTACH */}
-          <div className="flex items-center gap-2 text-[#1C5FAF] font-medium cursor-pointer">
+          {/* FILE */}
+          <div className="flex items-center gap-2 text-[#1C5FAF] text-sm font-medium cursor-pointer">
             <label className="flex items-center gap-2 hover:text-blue-600 transition cursor-pointer">
               📎 फाइल जोडा
               <input
@@ -106,16 +96,15 @@ export default function ComplaintFormSection() {
               />
             </label>
             {formData.file && (
-              <span className="text-gray-600 text-sm truncate">
+              <span className="text-gray-500 truncate max-w-[150px] text-xs">
                 {formData.file.name}
               </span>
             )}
           </div>
 
-          {/* SUBMIT BUTTON */}
           <button
             type="submit"
-            className="w-full py-4 bg-[#1C5FAF] text-white font-bold rounded-2xl shadow-[0_6px_0_#144a87] hover:shadow-[0_4px_0_#144a87] hover:-translate-y-0.5 active:translate-y-0 active:shadow-[0_0px_0_#144a87] transition-all"
+            className="w-full py-3 bg-[#1C5FAF] text-white text-sm font-bold rounded-xl shadow hover:bg-[#174f91] transition-all"
           >
             तक्रार नोंदवा
           </button>

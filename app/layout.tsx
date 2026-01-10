@@ -3,8 +3,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 //@ts-ignore
 import "./globals.css";
-import GalleryCarousel from "./components/GalleryCarousel";
-import NotificationBanner from "./components/NotificationBanner";
 
 export const metadata: Metadata = {
   title: "Government",

@@ -28,7 +28,7 @@ export default function GalleryCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full mx-auto aspect-[16/9] sm:aspect-[16/6] overflow-hidden shadow-xl group">
+    <div className="relative w-full mx-auto aspect-video sm:aspect-[16/7] overflow-hidden shadow-xl group">
       {/* Image */}
       <Image
         src={slides[index].src}

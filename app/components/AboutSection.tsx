@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -13,18 +14,23 @@ export default function AboutSection() {
             आमच्या गट ग्रामपंचायत बद्दल
           </h2>
 
-          <p className="text-[17px] leading-relaxed sm:text-[18px] sm:leading-loose text-gray-700">
+          {/* Truncated Text */}
+          <p className="text-[17px] leading-relaxed sm:text-[18px] sm:leading-loose text-gray-700 line-clamp-5">
             आमच्या गावाचा समृद्ध इतिहास, सांस्कृतिक परंपरा आणि विकासकामांची सातत्यपूर्ण धडपड
             यामुळे गट ग्रामपंचायत खेडी (गो. गो.) मन्नाथ सतत प्रगतीच्या मार्गावर आहे.
             खेडी गोवारगोंदी ही महाराष्ट्रातील नागपूर जिल्ह्याच्या नरखेड तालुक्यातील एक
-            ग्रामपंचायत आहे. हे गाव तालुका मुख्यालय नरखेड पासून सुमारे <span className="font-bold">२० किमी</span> अंतरावर आणि
-            जिल्हा मुख्यालय नागपूर पासून सुमारे <span className="font-bold">८२ किमी</span> अंतरावर स्थित आहे.
+            ग्रामपंचायत आहे. हे गाव तालुका मुख्यालय नरखेड पासून सुमारे २० किमी अंतरावर आणि
+            जिल्हा मुख्यालय नागपूर पासून सुमारे ८२ किमी अंतरावर स्थित आहे.
             पुढील विभागांमध्ये तुम्हाला या गावाबद्दलची संपूर्ण माहिती मिळेल.
           </p>
 
-          <button className="mt-8 inline-block bg-[#1C5FAF] text-white px-7 py-3 rounded-lg text-base font-semibold shadow-lg hover:bg-[#174f91] transition">
+          {/* READ MORE BTN */}
+          <Link
+            href="/about"
+            className="mt-8 inline-block bg-[#1C5FAF] text-white px-7 py-3 rounded-lg text-base font-semibold shadow-lg hover:bg-[#174f91] transition"
+          >
             अधिक वाचा →
-          </button>
+          </Link>
         </div>
 
         {/* RIGHT IMAGE */}

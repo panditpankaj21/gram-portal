@@ -7,12 +7,6 @@ export default function MediaPage() {
       link: "#",
     },
     {
-      title: "पत्रकार परिषद",
-      desc: "ग्रामपंचायतीच्या अधिकृत निवेदनांचे संग्रह.",
-      icon: "📰",
-      link: "#",
-    },
-    {
       title: "फोटो गॅलरी",
       desc: "गावातील कार्यक्रमांचे, विकासकामांचे आणि उत्सवांचे फोटो.",
       icon: "📸",
@@ -30,18 +24,12 @@ export default function MediaPage() {
       icon: "🗞️",
       link: "#",
     },
-    {
-      title: "सोशल मीडिया",
-      desc: "ग्रामपंचायत अधिकृत सोशल मीडिया पेजेस.",
-      icon: "🌐",
-      link: "#",
-    },
   ];
 
   return (
     <section className="min-h-screen bg-[#E8F1FB] py-14 px-4">
-      <div className="max-w-6xl mx-auto">
-        
+      <div className="max-w-6xl mx-auto border-2 text-center">
+         
         {/* Title */}
         <h1 className="text-3xl text-center font-bold text-[#1C5FAF] mb-3">
           मीडिया लिंक
@@ -51,7 +39,7 @@ export default function MediaPage() {
         </p>
 
         {/* Card Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="w-3xl  self-auto border-2 grid sm:grid-cols-2 lg:grid-cols-2 gap-y-10 gap-x-10">
           {mediaLinks.map((item, index) => (
             <a
               key={index}

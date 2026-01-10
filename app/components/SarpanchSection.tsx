@@ -13,7 +13,7 @@ export default function SarpanchSection() {
                 🗺️ नकाशा 
             </h2> 
             <div className="w-full h-120 rounded-2xl overflow-hidden shadow-xl ring-1 ring-blue-300">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7764.949017081841!2d78.1291!3d20.8909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4975dd75e2bbb%3A0x7c64cbea2e119cf9!2sNarkhed%2C%20Maharashtra!5e0!3m2!1en!2sin!4v1704877777777" 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.581396023483!2d78.62692685!3d21.3670006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4560d8596f0a7%3A0x248ddb73991b6cf5!2sSonoli%2C%20Maharashtra%20441306!5e0!3m2!1sen!2sin!4v1768049940692!5m2!1sen!2sin" 
                 loading="lazy" 
                 allowFullScreen 
                 className="w-full h-full border-0" 

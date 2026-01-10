@@ -1,81 +1,124 @@
-import { Download } from "lucide-react";
+"use client";
 
-const forms = [
+import { useState } from "react";
+
+const items = [
   {
-    title: "जन्म प्रमाणपत्र अर्ज",
-    subtitle: "Birth Certificate Application (Form No. 1)",
-    file: "/forms/birth-form.pdf",
+    type: "Certificate",
+    title: "सर्वोत्कृष्ट ग्रामपंचायत",
+    desc: "सर्वोत्तम ग्रामपंचायत या प्रकारात प्रथम क्रमांकाचा पुरस्कार.",
+    image: "/gallery/image1.jpg",
   },
   {
-    title: "मृत्यू प्रमाणपत्र अर्ज",
-    subtitle: "Death Certificate Application (Form No. 2)",
-    file: "/forms/death-form.pdf",
+    type: "Award",
+    title: "भूजल समृद्ध ग्राम स्पर्धा २०२२-२३",
+    desc: "ग्रामाचा प्रथम क्रमांक! 🏆",
+    image: "/gallery/image2.jpg",
   },
-  {
-    title: "विवाह नोंदणी अर्ज",
-    subtitle: "Marriage Registration Application",
-    file: "/forms/marriage-form.pdf",
-  },
-  {
-    title: "दारिद्र्य रेषेखाली अर्ज",
-    subtitle: "Below Poverty Line Application",
-    file: "/forms/bpl-form.pdf",
-  },
-  {
-    title: "येणे-बाकी नसल्याचा दाखला",
-    subtitle: "No Dues Certificate",
-    file: "/forms/no-dues-form.pdf",
-  },
-  {
-    title: "Audit Report 2024-25",
-    subtitle: "Gram Panchayat Financial Audit",
-    file: "/forms/audit-2024-25.xlsx",
-  },
+  // Add more…
 ];
 
-export default function PanchayatForms() {
+const fallback = (title: string) => title.charAt(0).toUpperCase();
+
+export default function AwardsPage() {
+  const [active, setActive] = useState<string | null>(null);
+
   return (
-    <section className="min-h-screen bg-blue-50/60 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
+    <>
+      <section className="min-h-screen w-full bg-gradient-to-b from-[#e8f1ff] to-white py-16 px-4 sm:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1C5FAF]">
+              प्रमाणपत्रे आणि पुरस्कार
+            </h2>
+            <p className="text-gray-600 text-lg mt-2">
+              आमच्या ग्रामपंचायतीला मिळालेली अधिकृत प्रमाणपत्रे आणि सन्मान.
+            </p>
+          </div>
 
-        {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl font-bold text-center text-[#1C5FAF] tracking-wide">
-          ग्रामपंचायत अर्ज व सेवा
-        </h1>
-        <p className="text-center text-slate-600 mt-2 mb-10 text-[15px]">
-          आवश्यक फॉर्म खाली दिले आहेत — डाउनलोड करून सादर करा
-        </p>
-
-        {/* Forms Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {forms.map((item, index) => (
-            <div
-              key={index}
-              className="rounded-xl border border-blue-200 bg-white shadow-sm
-              hover:border-blue-400 hover:shadow-md transition-all duration-200 p-5"
-            >
-              <h2 className="text-lg font-semibold text-[#1C5FAF] leading-snug">
-                {item.title}
-              </h2>
-              <p className="text-sm text-slate-600 mt-1">
-                {item.subtitle}
-              </p>
-
-              <a
-                href={item.file}
-                download
-                className="mt-5 inline-flex items-center gap-2 px-4 py-2 rounded-md
-                bg-[#1C5FAF] text-white text-sm font-medium
-                hover:bg-[#0e529a] transition-all"
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            {items.map((item, idx) => (
+              <div
+                key={idx}
+                className="group bg-white rounded-2xl overflow-hidden border border-blue-100 
+                shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <Download size={18} />
-                Download
-              </a>
-            </div>
-          ))}
-        </div>
+                {/* IMAGE */}
+                <div className="relative w-full h-48 overflow-hidden">
+                  {item.image ? (
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-[#1C5FAF]/10 text-5xl font-bold text-[#1C5FAF]">
+                      {fallback(item.title)}
+                    </div>
+                  )}
+                </div>
 
-      </div>
-    </section>
+                {/* CONTENT */}
+                <div className="p-6">
+                  <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wide rounded-full bg-[#1C5FAF] text-white">
+                    {item.type}
+                  </span>
+
+                  <h3 className="mt-3 text-lg font-semibold text-gray-800 group-hover:text-[#1C5FAF] transition">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-gray-600 text-sm mt-1">{item.desc}</p>
+
+                  {/* SIMPLE ARROW BUTTON */}
+                  <button
+                    onClick={() => setActive(item.image ?? null)}
+                    className="mt-4 cursor-pointer flex items-center gap-1 text-[#1C5FAF] font-semibold hover:gap-2 transition-all"
+                  >
+                    पहा/डाउनलोड करा →
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MODAL */}
+      {active && (
+        <div
+          className="fixed inset-0 bg-black/70 backdrop-blur-sm flex justify-center items-center p-4 z-[999]"
+          onClick={() => setActive(null)}
+        >
+          <div
+            className="relative max-w-3xl w-full bg-white rounded-2xl shadow-xl p-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={active}
+              alt="Full"
+              className="w-full max-h-[75vh] object-contain rounded-lg"
+            />
+
+            {/* CLOSE BUTTON */}
+            <button
+              onClick={() => setActive(null)}
+              className="absolute -top-4 -right-4 bg-white rounded-full shadow-lg p-2 font-bold text-[#1C5FAF] hover:bg-blue-50"
+            >
+              ✕
+            </button>
+
+            {/* DOWNLOAD BUTTON */}
+            <a
+              href={active}
+              download
+              className="mt-4 block text-center w-full py-3 rounded-xl border border-[#1C5FAF] text-[#1C5FAF] font-semibold hover:bg-[#1C5FAF] hover:text-white transition"
+            >
+              डाउनलोड करा 
+            </a>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

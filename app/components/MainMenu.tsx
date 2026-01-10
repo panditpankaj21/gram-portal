@@ -8,9 +8,8 @@ const navItems = [
   { label: "आमच्याबद्दल", href: "/about" },
   { label: "प्रमाणपत्रे", href: "/pramanpatre" },
   { label: "फॉर्म / डाउनलोड", href: "/forms" },
-  { label: "मिडिया लिंक", href: "/media" },
   { label: "गॅलरी", href: "/gallery" },
-  { label: "तालाव", href: "/talav" },
+  { label: "मिडिया लिंक", href: "/media" },
 ];
 
 export default function MainMenu() {
@@ -29,7 +28,7 @@ export default function MainMenu() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="relative font-medium text-[15px] hover:text-yellow-300 transition-colors group"
+                className="relative font-bold text-[15px] hover:text-yellow-300 transition-colors group"
               >
                 {item.label}
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-yellow-300 transition-all duration-300 group-hover:w-full"></span>

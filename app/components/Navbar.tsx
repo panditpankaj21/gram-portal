@@ -65,7 +65,7 @@ export default function Navbar() {
 
       {/* Branding */}
       <div className="px-4 py-4 text-center bg-gradient-to-b from-blue-50 to-white">
-        <h1 className="text-2xl font-extrabold text-[#0A427A] tracking-wide leading-tight drop-shadow-sm">
+        <h1 className="text-3xl font-extrabold text-[#0A427A] tracking-wide leading-tight drop-shadow-sm">
           ग्राम पंचायत सोनोली
         </h1>
 
@@ -73,7 +73,7 @@ export default function Navbar() {
           पंचायत समिती काटोल, जिल्हा परिषद नागपूर
         </p>
 
-        <p className="text-[14px] text-gray-600 mt-1 italic">
+        <p className="text-[14px] text-gray-600 mt-1">
           गाव विकास, पारदर्शक प्रशासन आणि लोकसहभाग
         </p>
       </div>

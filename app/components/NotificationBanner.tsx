@@ -2,10 +2,10 @@ import React from "react";
 
 const NotificationBanner: React.FC = () => {
   return (
-    <div className="w-full bg-black/95 text-red-500 overflow-hidden">
+    <div className="w-full bg-black/90 text-red-500 overflow-hidden">
       <div className="whitespace-nowrap animate-marquee py-1">
         <span className="mx-4 font-semibold">
-          🔔 Important Notification: Government services will be unavailable on 26th January due to Republic Day.
+          🔔 महत्त्वाची सूचना: २६ जानेवारी रोजी प्रजासत्ताक दिनानिमित्त सरकारी सेवा अनुपलब्ध राहतील.
         </span>
       </div>
     </div>
