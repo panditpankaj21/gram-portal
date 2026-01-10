@@ -48,7 +48,7 @@ export default function GalleryPage() {
       {selectedImg && (
         <div
           className="
-            fixed inset-0 z-[999]
+            fixed inset-0 z-999
             bg-black/70 backdrop-blur-sm
             flex justify-center items-center
             animate-[fadeIn_0.25s_ease-in-out]

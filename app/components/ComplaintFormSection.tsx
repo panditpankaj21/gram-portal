@@ -47,7 +47,7 @@ export default function ComplaintFormSection() {
             ग्रामपंचायत तक्रार पोर्टल
           </h2>
           <p className="mt-3 text-gray-700 text-base sm:text-lg">
-            तुमची समस्या आमच्यासाठी महत्त्वाची आहे. कृपया खालील तपशील भरा 🙌
+            तुमची समस्या आमच्यासाठी महत्त्वाची आहे. कृपया खालील तपशील भरा
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function ComplaintFormSection() {
             type="submit"
             className="w-full py-4 bg-[#1C5FAF] text-white font-bold rounded-2xl shadow-[0_6px_0_#144a87] hover:shadow-[0_4px_0_#144a87] hover:-translate-y-0.5 active:translate-y-0 active:shadow-[0_0px_0_#144a87] transition-all"
           >
-            🚀 तक्रार नोंदवा
+            तक्रार नोंदवा
           </button>
         </form>
       </div>
