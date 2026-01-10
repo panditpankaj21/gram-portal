@@ -1,8 +1,6 @@
 "use client";
 
-import GoogleTranslate from "./GoogleTranslate";
 import { useState } from "react";
-import NotificationBanner from "./NotificationBanner";
 import MainMenu from "./MainMenu";
 
 export default function Navbar() {

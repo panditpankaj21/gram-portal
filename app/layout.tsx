@@ -21,8 +21,6 @@ export default function RootLayout({
       <body>
         <div className="min-h-screen flex flex-col">
           <Navbar/>
-          <GalleryCarousel/>
-          <NotificationBanner/>
           <main className="flex-grow">
             {children}
           </main> 

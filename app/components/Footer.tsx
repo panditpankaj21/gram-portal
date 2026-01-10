@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="bg-gradient-to-b from-[#1C3C74] to-[#245A9A] text-white pt-10 pb-6 mt-10">
+      <footer className="bg-gradient-to-b from-[#1C3C74] to-[#245A9A] text-white pt-10 pb-6">
         
         {/* Social Icons */}
         <div className="flex justify-center flex-wrap gap-4 mb-6">

@@ -28,7 +28,7 @@ export default function YojanaSection() {
 
         {/* HEADER */}
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1C5FAF] mb-2">
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-[#1C5FAF] mb-2">
             योजना
           </h2>
           <p className="text-gray-700 sm:text-lg max-w-2xl mx-auto">

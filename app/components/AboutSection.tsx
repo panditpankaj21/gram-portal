@@ -9,7 +9,7 @@ export default function AboutSection() {
 
         {/* LEFT CONTENT */}
         <div className="text-gray-800">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#1C5FAF] mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-2xl font-extrabold text-[#1C5FAF] mb-6 leading-tight">
             आमच्या गट ग्रामपंचायत बद्दल
           </h2>
 

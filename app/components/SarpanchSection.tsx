@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function SarpanchSection() {
   return (
-    <section className="w-full bg-gradient-to-b from-[#e8f1ff] to-white py-16 px-4 sm:px-8">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+    <section className="w-full bg-linear-to-b from-[#e8f1ff] to-white py-8 px-4 sm:px-4">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
 
         {/* LEFT — MAP + TITLE */}
         <div> 
@@ -22,9 +22,9 @@ export default function SarpanchSection() {
         </div>
 
         {/* RIGHT — PROFILE */}
-        <div className="relative bg-white/70 backdrop-blur-md shadow-xl rounded-3xl border border-blue-200 p-8 hover:shadow-blue-300/40 transition duration-500">
+        <div className="relative bg-white/70 backdrop-blur-md shadow-xl rounded-3xl border border-blue-200 p-5 hover:shadow-blue-300/40 transition duration-500">
           {/* PHOTO */}
-          <div className="relative w-36 h-36 mx-auto rounded-full overflow-hidden shadow-lg ring-4 ring-gradient-to-tr from-blue-300 via-blue-400 to-blue-500 mb-6">
+          <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg from-blue-300 via-blue-400 to-blue-500 mb-6">
             <Image
               src="/gallery/image1.jpg"
               alt="सरपंच"
@@ -64,7 +64,7 @@ export default function SarpanchSection() {
             ].map(([value, label], i) => (
               <div
                 key={i}
-                className="bg-gradient-to-tr from-blue-50 via-white to-blue-50 border border-blue-100 rounded-2xl py-4 px-2 shadow-sm hover:shadow-lg hover:scale-105 transform transition duration-300"
+                className="border-blue-100 rounded-xl py-4 px-2 shadow-sm transform transition duration-300"
               >
                 <p className="font-bold text-[#1C5FAF] text-lg sm:text-base">{value}</p>
                 <p className="text-gray-600 text-xs sm:text-sm">{label}</p>
