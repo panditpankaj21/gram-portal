@@ -8,7 +8,6 @@ import {
   Building2, 
   Mail, 
   Phone, 
-  Navigation,
   Hash
 } from "lucide-react";
 
