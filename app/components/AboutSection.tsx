@@ -51,15 +51,19 @@ export default function AboutSection() {
             {/* Main Description */}
             <div className="pl-4 border-l-4 border-[#1e3a8a] py-1">
                <p className="text-lg text-slate-600 leading-relaxed font-medium">
-                 "आमच्या गावाचा समृद्ध इतिहास, सांस्कृतिक परंपरा आणि विकासकामांची सातत्यपूर्ण धडपड
-                 यामुळे गट ग्रामपंचायत सोनोली सतत प्रगतीच्या मार्गावर आहे."
+                 "निसर्गरम्य परिसराच्या कुशीत वसलेले आणि समृद्ध सांस्कृतिक वारसा लाभलेले सोनोली हे 
+                 नागपूर जिल्ह्याच्या काटोल तालुक्यातील एक प्रगतशील गाव आहे. ग्रामपंचायत सोनोली अंतर्गत 
+                 येणारे आमचे गाव शांतता, सामाजिक एकता आणि शाश्वत विकासाचे उत्तम उदाहरण म्हणून 
+                 ओळखले जाते."
                </p>
             </div>
             
             <p className="text-slate-500 leading-relaxed">
-               हे गाव नागपूर जिल्ह्याच्या नरखेड तालुक्यातील एक आदर्श ग्रामपंचायत असून, 
-               तालुका मुख्यालयापासून २० किमी अंतरावर स्थित आहे. आम्ही आधुनिक तंत्रज्ञान आणि 
-               पारंपारिक मूल्यांची सांगड घालत आहोत.
+               हे गाव तालुका मुख्यालय काटोलपासून सुमारे १२ किमी अंतरावर, 
+               तर जिल्हा मुख्यालय नागपूरपासून ६० किमी अंतरावर स्थित आहे. 
+               परंपरेची जपणूक करत आधुनिकतेची कास धरणारे सोनोली गाव आज 
+               आपल्या नाविन्यपूर्ण विकासकामांच्या जोरावर प्रगतीचे नवे टप्पे गाठत आहे. 
+               पुढील विभागांमध्ये तुम्हाला या गावाबद्दलची माहिती मिळेल.
             </p>
 
             {/* Feature Grid (New Improvement) */}
@@ -83,7 +87,7 @@ export default function AboutSection() {
                 href="/about"
                 className="group inline-flex items-center gap-3 bg-[#1e3a8a] text-white px-8 py-4 rounded-xl text-sm font-bold shadow-lg shadow-blue-900/20 hover:bg-blue-800 hover:shadow-xl transition-all duration-300"
               >
-                संपूर्ण इतिहास वाचा
+                अधिक वाचा
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
@@ -126,7 +130,7 @@ export default function AboutSection() {
                      <Building2 size={24} />
                   </div>
                   <div>
-                     <p className="text-2xl font-extrabold text-slate-900">६५+</p>
+                     <p className="text-3xl font-extrabold text-slate-900">७०+</p>
                      <p className="text-xs font-bold text-slate-500 uppercase">वर्षे अविरत सेवा</p>
                   </div>
                </div>

@@ -178,7 +178,7 @@ export default function ComplaintFormSection() {
                   </div>
                   <div className="text-center">
                     <p className="text-sm font-bold text-slate-600 group-hover:text-blue-700">
-                      {formData.file ? formData.file.name : "फोटो किंवा документ जोडा"}
+                      {formData.file ? formData.file.name : "फोटो किंवा Attachment जोडा"}
                     </p>
                     <p className="text-xs text-slate-400 mt-0.5">Max size: 5MB (JPG/PDF)</p>
                   </div>

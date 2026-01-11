@@ -106,6 +106,7 @@ export default function Footer() {
                 { src: "/logos/beti-bacho.png", alt: "Beti Bachao" },
                 { src: "/logos/satyamev.png", alt: "Satyamev Jayate" },
                 { src: "/logos/azadi.png", alt: "Azadi Ka Amrit Mahotsav" },
+                { src: "/ladli.png", alt: "Ladli bahin yojna" },
               ].map((logo, idx) => (
                 <div key={idx} className="bg-white p-1 rounded-md flex items-center justify-center h-14 w-full shadow-sm hover:scale-105 transition-transform">
                   <Image
@@ -136,7 +137,7 @@ export default function Footer() {
           
           <div className="text-center md:text-left">
             <p>
-              © 2025 <span className="text-white font-semibold">ग्रामपंचायत कोतवालबर्डी/सोनोली</span>. सर्व हक्क राखीव.
+              © 2025 <span className="text-white font-semibold">ग्रामपंचायत सोनोली (ता. काटोल)</span>. सर्व हक्क राखीव.
             </p>
           </div>
 
@@ -146,7 +147,7 @@ export default function Footer() {
                href="#" 
                className="flex items-center gap-1.5 text-orange-400 hover:text-orange-300 transition-colors font-semibold"
              >
-               CertNexus India Pvt. Ltd. Nagpur
+               pkp and vw
                <ExternalLink size={12} />
              </a>
           </div>
