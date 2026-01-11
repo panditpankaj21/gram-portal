@@ -2,46 +2,138 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { 
+  ArrowRight, 
+  Building2, 
+  Users, 
+  Landmark, 
+  Leaf 
+} from "lucide-react";
 
 export default function AboutSection() {
+  
+  const features = [
+    { icon: <Landmark className="text-orange-600" size={20} />, title: "पारदर्शक प्रशासन", desc: "लोकाभिमुख व पारदर्शक कारभार" },
+    { icon: <Building2 className="text-blue-600" size={20} />, title: "पायाभूत सुविधा", desc: "रस्ते, पाणी आणि वीज यावर भर" },
+    { icon: <Users className="text-purple-600" size={20} />, title: "लोकसहभाग", desc: "प्रत्येक निर्णयात ग्रामस्थांचा सहभाग" },
+    { icon: <Leaf className="text-green-600" size={20} />, title: "हरित गाव", desc: "पर्यावरण पूरक विकास कामे" },
+  ];
+
   return (
-    <section className="w-full bg-gradient-to-b from-blue-50 via-white to-blue-50 py-16 px-4 sm:px-8">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+      
+      {/* Background Pattern (Subtle Dots) */}
+      <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#1e3a8a 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
 
-        {/* LEFT CONTENT */}
-        <div className="text-gray-800">
-          <h2 className="text-2xl sm:text-2xl font-extrabold text-[#1C5FAF] mb-6 leading-tight">
-            आमच्या गट ग्रामपंचायत बद्दल
-          </h2>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-          {/* Truncated Text */}
-          <p className="text-[17px] leading-relaxed sm:text-[18px] sm:leading-loose text-gray-700 line-clamp-5">
-            आमच्या गावाचा समृद्ध इतिहास, सांस्कृतिक परंपरा आणि विकासकामांची सातत्यपूर्ण धडपड
-            यामुळे गट ग्रामपंचायत खेडी (गो. गो.) मन्नाथ सतत प्रगतीच्या मार्गावर आहे.
-            खेडी गोवारगोंदी ही महाराष्ट्रातील नागपूर जिल्ह्याच्या नरखेड तालुक्यातील एक
-            ग्रामपंचायत आहे. हे गाव तालुका मुख्यालय नरखेड पासून सुमारे २० किमी अंतरावर आणि
-            जिल्हा मुख्यालय नागपूर पासून सुमारे ८२ किमी अंतरावर स्थित आहे.
-            पुढील विभागांमध्ये तुम्हाला या गावाबद्दलची संपूर्ण माहिती मिळेल.
-          </p>
+          {/* LEFT CONTENT */}
+          <div className="space-y-8">
+            
+            {/* Header Block */}
+            <div>
+               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-50 text-orange-700 border border-orange-200 text-xs font-bold tracking-wider uppercase mb-4">
+                  <Building2 size={14} />
+                  ग्राम विकास
+               </div>
+               <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                 ग्रामपंचायत <span className="text-[#1e3a8a] relative inline-block">
+                    सोनोली
+                    {/* Creative Underline */}
+                    <svg className="absolute w-full h-3 -bottom-1 left-0 text-orange-500" viewBox="0 0 100 10" preserveAspectRatio="none">
+                       <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="3" fill="none" />
+                    </svg>
+                 </span>
+               </h2>
+            </div>
 
-          {/* READ MORE BTN */}
-          <Link
-            href="/about"
-            className="mt-8 inline-block bg-[#1C5FAF] text-white px-7 py-3 rounded-lg text-base font-semibold shadow-lg hover:bg-[#174f91] transition"
-          >
-            अधिक वाचा →
-          </Link>
-        </div>
+            {/* Main Description */}
+            <div className="pl-4 border-l-4 border-[#1e3a8a] py-1">
+               <p className="text-lg text-slate-600 leading-relaxed font-medium">
+                 "आमच्या गावाचा समृद्ध इतिहास, सांस्कृतिक परंपरा आणि विकासकामांची सातत्यपूर्ण धडपड
+                 यामुळे गट ग्रामपंचायत सोनोली सतत प्रगतीच्या मार्गावर आहे."
+               </p>
+            </div>
+            
+            <p className="text-slate-500 leading-relaxed">
+               हे गाव नागपूर जिल्ह्याच्या नरखेड तालुक्यातील एक आदर्श ग्रामपंचायत असून, 
+               तालुका मुख्यालयापासून २० किमी अंतरावर स्थित आहे. आम्ही आधुनिक तंत्रज्ञान आणि 
+               पारंपारिक मूल्यांची सांगड घालत आहोत.
+            </p>
 
-        {/* RIGHT IMAGE */}
-        <div className="relative w-full h-80 sm:h-[26rem] shadow-xl rounded-xl overflow-hidden">
-          <Image
-            src="/gallery/image1.jpg"
-            alt="ग्रामपंचायत"
-            fill
-            priority
-            className="object-cover hover:scale-110 duration-[900ms] ease-out"
-          />
+            {/* Feature Grid (New Improvement) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+               {features.map((item, idx) => (
+                 <div key={idx} className="flex items-start gap-3 p-3 rounded-lg hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-100">
+                    <div className="mt-1 p-2 bg-white rounded-md shadow-sm border border-slate-100 shrink-0">
+                       {item.icon}
+                    </div>
+                    <div>
+                       <h4 className="font-bold text-slate-900 text-sm">{item.title}</h4>
+                       <p className="text-xs text-slate-500 mt-0.5">{item.desc}</p>
+                    </div>
+                 </div>
+               ))}
+            </div>
+
+            {/* Action Button */}
+            <div className="pt-2">
+              <Link
+                href="/about"
+                className="group inline-flex items-center gap-3 bg-[#1e3a8a] text-white px-8 py-4 rounded-xl text-sm font-bold shadow-lg shadow-blue-900/20 hover:bg-blue-800 hover:shadow-xl transition-all duration-300"
+              >
+                संपूर्ण इतिहास वाचा
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE (Composite Layout) */}
+          <div className="relative lg:h-[600px] flex items-center justify-center">
+            
+            {/* Back Decorative Circle */}
+            <div className="absolute w-[400px] h-[400px] bg-blue-50 rounded-full blur-3xl opacity-60 -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+            
+            {/* Main Image Frame */}
+            <div className="relative w-full max-w-md">
+               {/* Top-Right Decorative Box */}
+               <div className="absolute -top-4 -right-4 w-24 h-24 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 z-0"></div>
+               
+               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                  <div className="relative h-[450px] w-full">
+                     <Image
+                        src="/gallery/image1.jpg" // Ensure path is correct
+                        alt="Grampanchayat Building"
+                        fill
+                        className="object-cover hover:scale-105 transition-transform duration-1000"
+                        priority
+                     />
+                     {/* Overlay Gradient */}
+                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+                  </div>
+                  
+                  {/* Bottom Text on Image */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                     <p className="font-bold text-lg">ग्राम सचिवालय</p>
+                     <p className="text-sm opacity-90">प्रशासकीय केंद्र</p>
+                  </div>
+               </div>
+
+               {/* Floating Stats Badge */}
+               <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-slate-100 flex items-center gap-4 max-w-[200px]">
+                  <div className="bg-green-100 p-3 rounded-full text-green-700">
+                     <Building2 size={24} />
+                  </div>
+                  <div>
+                     <p className="text-2xl font-extrabold text-slate-900">६५+</p>
+                     <p className="text-xs font-bold text-slate-500 uppercase">वर्षे अविरत सेवा</p>
+                  </div>
+               </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </section>

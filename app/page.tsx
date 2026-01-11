@@ -9,11 +9,11 @@ import YojanaSection from './components/YojnaSection';
 export default function Home() {
   return (
     <div>
-      <GalleryCarousel/>
       <NotificationBanner/>
+      <GalleryCarousel/>
       <AboutSection/>
       <SarpanchSection/>
-      <GrampanchayatTabs/>
+      {/* <GrampanchayatTabs/> */}
       <YojanaSection/>
       <ComplaintFormSection/>
     </div>
