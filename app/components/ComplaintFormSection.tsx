@@ -73,11 +73,11 @@ export default function ComplaintFormSection() {
                <div className="space-y-4 text-sm font-medium">
                  <div className="flex items-center gap-3">
                    <div className="p-2 bg-white/10 rounded-lg"><Phone size={18} /></div>
-                   <span>हेल्पलाइन: 9764850450</span>
+                   <span>हेल्पलाइन: 9923620755</span>
                  </div>
                  <div className="flex items-center gap-3">
                    <div className="p-2 bg-white/10 rounded-lg"><MessageSquare size={18} /></div>
-                   <span>व्हाट्सअँप: 9764850450</span>
+                   <span>व्हाट्सअँप: 9923620736</span>
                  </div>
                </div>
              </div>

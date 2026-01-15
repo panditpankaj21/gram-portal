@@ -37,12 +37,6 @@ export default function Navbar() {
 
           {/* Right: Accessibility Tools */}
           <div className="flex items-center gap-4">
-            {/* Skip to Content (Standard A11y) */}
-            <a href="#main-content" className="hidden md:flex items-center gap-1 hover:underline opacity-80">
-               <SkipForward size={14} /> मुख्य मजकुराकडे जा
-            </a>
-
-            <span className="opacity-50">|</span>
 
             {/* Font Resizer */}
             <div className="flex items-center gap-2">
@@ -108,7 +102,7 @@ export default function Navbar() {
              {/* Example: Digital India or Swachh Bharat Logo */}
              <div className="text-right hidden lg:block">
                 <p className="text-xs font-bold text-gray-400 uppercase">नागरिक सहायता</p>
-                <p className="text-lg font-bold text-blue-900">9764850450</p>
+                <p className="text-lg font-bold text-blue-900">9923620736</p>
              </div>
              
              <Image 

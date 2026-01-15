@@ -18,7 +18,7 @@ const facilities = [
     id: 1,
     type: "शिक्षण (Education)",
     category: "school", // Used for color coding
-    name: "जिल्हा परिषद प्रा. शाळा, लोहारी सावंगा",
+    name: "जिल्हा परिषद उच्च प्रा. शाळा, सोनोली",
     description: "ग्रामीण भागातील विद्यार्थ्यांना दर्जेदार प्राथमिक शिक्षण.",
     stats: {
       boys: 26,
@@ -31,10 +31,54 @@ const facilities = [
       "इलेक्ट्रिक सुविधा",
       "कॉम्पुटर लॅब"
     ],
-    address: "लोहारी सावंगा, ता. नरखेड, जिल्हा नागपूर",
+    address: "सोनोली ता. काटोल, जिल्हा नागपूर - 441302",
     contactPerson: "व्यी.जी.जिचकार",
     contactPhone: "9823866257",
     timing: "सकाळी 10:30 ते सायं 5:00",
+    emergency: null
+  },
+  {
+    id: 2,
+    type: "बालशिक्षण (Child Education)",
+    category: "school", // Used for color coding
+    name: "अंगणवाडी क्रमांक १, सोनोली",
+    description: "ग्रामीण भागातील विद्यार्थ्यांना दर्जेदार प्राथमिक शिक्षण.",
+    stats: {
+      boys: 4,
+      girls: 12,
+      total: 16,
+      staff: 1
+    },
+    amenities: [
+      "पिण्याचे स्वच्छ पाणी",
+      "इलेक्ट्रिक सुविधा",
+    ],
+    address: "सोनोली ता. काटोल, जिल्हा नागपूर - 441302",
+    contactPerson: "हर्षा संजय टोनपे",
+    contactPhone: "7066059721",
+    timing: "सकाळी 10:00 ते दुपार 2:30",
+    emergency: null
+  },
+  {
+    id: 3,
+    type: "बालशिक्षण (Child Education)",
+    category: "school", // Used for color coding
+    name: "अंगणवाडी क्रमांक २, सोनोली",
+    description: "ग्रामीण भागातील विद्यार्थ्यांना दर्जेदार प्राथमिक शिक्षण.",
+    stats: {
+      boys: 10,
+      girls: 4,
+      total: 14,
+      staff: 1
+    },
+    amenities: [
+      "पिण्याचे स्वच्छ पाणी",
+      "इलेक्ट्रिक सुविधा",
+    ],
+    address: "सोनोली ता. काटोल, जिल्हा नागपूर - 441302",
+    contactPerson: "आशा विनोद यादव",
+    contactPhone: "9158875019",
+    timing: "सकाळी 10:00 ते दुपार 2:30",
     emergency: null
   }
 ];

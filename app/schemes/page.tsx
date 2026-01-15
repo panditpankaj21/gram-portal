@@ -18,7 +18,7 @@ const schemes = [
     objective: "सर्व पात्र कुटुंबांना सुरक्षित व परवडणारे घर उपलब्ध करून देणे.",
     eligibility: ["गरीबी रेषेखालील (BPL)", "लहान उत्पन्न गट (LIG) कुटुंबे"],
     process: "ग्रामपंचायत कार्यालयातून अर्ज करा किंवा ऑनलाईन पोर्टलवरून अर्ज करा.",
-    contactPerson: "श्री. आशिष शेषराव रेवतकर (ग्राम पंचायत अधिकारी)",
+    contactPerson: "श्री. आशिष शेषराव रेवतकर (ग्रामपंचायत अधिकारी)",
     contactNumber: "9923620736",
     color: "blue", // Theme color
     icon: <Home className="w-6 h-6" />,
@@ -49,7 +49,7 @@ export default function SchemesPage() {
           <span className="bg-orange-100 text-orange-800 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border border-orange-200">
             जनकल्याण
           </span>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900">
+          <h1 className="text-3xl md:text-5xl mt-4 font-extrabold text-slate-900">
             शासकीय योजना
           </h1>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg">

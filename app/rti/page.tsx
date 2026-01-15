@@ -28,8 +28,8 @@ const appellateAuthority = {
     designation: "प्रथम अपील प्राधिकृत अधिकारी",
   },
   second: {
-    name: "मुख्य कार्यकारी अधिकारी (CEO)",
-    role: "जिल्हा परिषद, नागपूर",
+    name: "गट विकास अधिकारी (गट-अ)",
+    role: "पंचायत समिती काटोल, जिल्हा नागपूर",
     designation: "द्वितीय अपील अधिकारी",
   }
 };
@@ -125,7 +125,6 @@ export default function RTIPage() {
                  </h4>
                  <p className="text-lg font-bold text-slate-800">{appellateAuthority.second.name}</p>
                  <p className="text-sm text-slate-500">{appellateAuthority.second.role}</p>
-                 <span className="text-xs text-slate-400 italic">(वरिष्ठ स्तर)</span>
               </div>
             </div>
           </div>

@@ -118,7 +118,7 @@ export default function AboutSection() {
                   </div>
                   
                   {/* Bottom Text on Image */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <div className="absolute bottom-10 left-0 right-0 p-6 text-white">
                      <p className="font-bold text-lg">ग्राम सचिवालय</p>
                      <p className="text-sm opacity-90">प्रशासकीय केंद्र</p>
                   </div>

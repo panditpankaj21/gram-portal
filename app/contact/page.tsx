@@ -102,15 +102,15 @@ export default function ContactPage() {
                 <div className="space-y-3">
                    <div className="flex justify-between items-center border-b border-white/20 pb-2">
                       <span className="flex items-center gap-2 text-sm font-medium opacity-90">
-                         <CalendarDays size={16} /> सोमवार - शनिवार
+                         <CalendarDays size={16} /> सोमवार - शुक्रवार
                       </span>
                       <span className="font-bold text-orange-300">
-                         ०९:४५ - १७:४५
+                         सकाळी 9:45 ते सायं 5:45
                       </span>
                    </div>
                    <div className="flex justify-between items-center pt-1">
                       <span className="flex items-center gap-2 text-sm font-medium opacity-90">
-                         <CalendarDays size={16} /> रविवार / सुट्टी
+                         <CalendarDays size={16} /> शनिवार-रविवार / सुट्टी
                       </span>
                       <span className="font-bold text-red-300 bg-red-500/20 px-2 py-0.5 rounded text-xs">
                          बंद (Closed)
@@ -135,7 +135,7 @@ export default function ContactPage() {
                    </div>
                    <div>
                       <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">सरपंच (Sarpanch)</p>
-                      <h3 className="text-lg font-bold text-slate-800 mt-1">श्रीमती ललिता लिलाधर महाजन</h3>
+                      <h3 className="text-lg font-bold text-slate-800 mt-1">सौ. ललिता लिलाधर महाजन</h3>
                       <a href="tel:9226900178" className="inline-flex items-center gap-2 mt-3 text-sm font-bold text-orange-600 bg-orange-50 px-3 py-1.5 rounded-lg hover:bg-orange-100 transition-colors">
                          <Phone size={14} /> 9226900178
                       </a>

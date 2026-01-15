@@ -129,7 +129,7 @@ export default function ServicesPage() {
           <span className="bg-teal-50 text-teal-800 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase border border-teal-200">
             नागरिक सनद (Citizen Charter)
           </span>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900">
+          <h1 className="text-3xl md:text-5xl mt-3 font-extrabold text-slate-900">
             ग्रामपंचायत सेवा
           </h1>
           <p className="text-slate-500 max-w-2xl mx-auto text-lg">
@@ -148,15 +148,15 @@ export default function ServicesPage() {
             >
               
               {/* 1. Service Header */}
-              <div className="bg-slate-50 p-5 border-b border-slate-100 flex items-start gap-4">
+              <div className="bg-blue-600 p-5 border-b border-slate-100 flex items-start gap-4">
                 <div className="p-3 bg-white rounded-lg border border-slate-200 text-teal-600 shadow-sm">
                    {service.icon}
                 </div>
                 <div>
-                   <h2 className="text-xl font-bold text-slate-800 leading-tight">
+                   <h2 className="text-xl font-bold text-white leading-tight">
                      {service.name}
                    </h2>
-                   <p className="text-sm text-slate-500 mt-1 font-medium">
+                   <p className="text-sm text-white mt-1 font-medium">
                      {service.purpose}
                    </p>
                 </div>
@@ -232,7 +232,7 @@ export default function ServicesPage() {
 
               {/* 4. Action Footer (Download) */}
               <div className="p-3 px-6 border-t border-slate-100 flex justify-between items-center bg-white">
-                 <span className="text-xs text-slate-400 font-medium">अधिकृत अधिकारी: ग्राम विकास अधिकारी</span>
+                 <span className="text-xs text-slate-400 font-medium">अधिकृत अधिकारी: ग्रामपंचायत अधिकारी</span>
                  <button disabled className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-slate-100 text-slate-400 text-xs font-bold cursor-not-allowed">
                     <Download size={14} />
                     फॉर्म डाउनलोड (लवकरच)

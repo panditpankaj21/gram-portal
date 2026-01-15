@@ -15,19 +15,19 @@ import {
 export default function AboutPage() {
   const team = [
     {
-      name: "सौ. नंदा अनिल बांदरे",
+      name: "सौ. ललिता लिलाधर महाजन",
       role: "सरपंच",
-      img: "", // Will show fallback icon until image is added
+      img: "/profile-photo/sarpanch.jpg", // Will show fallback icon until image is added
     },
     {
-      name: "साहिल शेषराव ढोकें",
+      name: "चंदू शेषराव तभाने",
       role: "उप-सरपंच",
-      img: "", 
+      img: "/profile-photo/upsarpanch.jpg", 
     },
     {
-      name: "गजानन शिवहरी शेळके",
-      role: "ग्रामसेवक",
-      img: "", 
+      name: "आशिष शेषराव रेवतकर",
+      role: "ग्राम पंचायत अधिकारी",
+      img: "/profile-photo/gp-officer.jpg", 
     },
   ];
 
@@ -75,9 +75,9 @@ export default function AboutPage() {
                  The content is exactly what you provided.
                */}
                
-               <p className="text-lg font-medium text-slate-800">
+               <h4 className="text-[#1C5FAF] font-bold text-lg mt-6 mb-2 flex items-center gap-2">
                  निसर्ग, संस्कृती आणि प्रगतीचा संगम - आमचे सोनोली!
-               </p>
+               </h4>
                <p>
                  नागपूर जिल्ह्यातील काटोल तालुक्यात वसलेले सोनोली हे एक शांत, सुंदर आणि प्रगतशील गाव आहे. काटोल शहरापासून जवळ असलेल्या या गावाने आपली ग्रामीण संस्कृती जपतानाच आधुनिकतेची कास धरली आहे. तालुक्याचे मुख्यालय असलेल्या काटोल शहरापासून सुमारे १२ किमी अंतरावर स्थित, आमचे गाव शांतता आणि सामाजिक एकतेचे उत्तम उदाहरण आहे. सामाजिक एकता आणि कृषी समृद्धी ही आमच्या गावाची प्रमुख ओळख आहे.
                </p>

@@ -57,7 +57,7 @@ export default function VillageProfileSection() {
                    {/* Title Info */}
                    <div className="text-center md:text-left">
                       <h3 className="text-2xl font-bold text-slate-800">ग्रामपंचायत सोनोली</h3>
-                      <p className="text-slate-500 font-medium">ता. नरखेड, जि. नागपूर - 441306</p>
+                      <p className="text-slate-500 font-medium">ता. काटोल, जि. नागपूर - 441306</p>
                       <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-100">
                          <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
                          LGD Code: 180290
@@ -88,7 +88,7 @@ export default function VillageProfileSection() {
                       </div>
                       <div className="text-sm">
                          <p className="opacity-70 text-xs uppercase font-bold">ईमेल</p>
-                         <a href="mailto:nandabandre66@gmail.com" className="font-semibold hover:text-orange-300 transition">nandabandre66@gmail.com</a>
+                         <a href="mailto:gpsonoli@gmail.com" className="font-semibold hover:text-orange-300 transition">gpsonoli@gmail.com</a>
                       </div>
                    </div>
                    <div className="w-px h-10 bg-white/20 hidden sm:block"></div>
@@ -98,7 +98,7 @@ export default function VillageProfileSection() {
                       </div>
                       <div className="text-sm">
                          <p className="opacity-70 text-xs uppercase font-bold">संपर्क</p>
-                         <a href="tel:+919763185985" className="font-semibold hover:text-orange-300 transition">+91 9763185985</a>
+                         <a href="tel:+919923620736" className="font-semibold hover:text-orange-300 transition">+91 9923620736</a>
                       </div>
                    </div>
                 </div>

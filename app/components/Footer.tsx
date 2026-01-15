@@ -83,7 +83,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-green-500 shrink-0" />
-                <span className="font-mono">+91 9764850450</span>
+                <span className="font-mono">+91 9226900178</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-500 shrink-0" />
@@ -137,7 +137,7 @@ export default function Footer() {
           
           <div className="text-center md:text-left">
             <p>
-              © 2025 <span className="text-white font-semibold">ग्रामपंचायत सोनोली (ता. काटोल)</span>. सर्व हक्क राखीव.
+              © 2026 <span className="text-white font-semibold">ग्रामपंचायत सोनोली (ता. काटोल)</span>. सर्व हक्क राखीव.
             </p>
           </div>
 
