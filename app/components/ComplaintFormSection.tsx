@@ -51,7 +51,7 @@ export default function ComplaintFormSection() {
   };
 
   return (
-    <section className="relative w-full bg-slate-50 py-16 px-4 md:px-8 font-sans" id="complaint-form">
+    <section className="relative w-full bg-slate-50 py-10 px-4 md:px-8 font-sans" id="complaint-form">
       
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100 flex flex-col md:flex-row">

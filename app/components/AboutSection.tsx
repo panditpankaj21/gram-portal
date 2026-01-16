@@ -20,7 +20,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+    <section className="relative w-full bg-white py-16 md:py-10 overflow-hidden">
       
       {/* Background Pattern (Subtle Dots) */}
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#1e3a8a 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>

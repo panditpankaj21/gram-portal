@@ -21,7 +21,7 @@ export default function VillageProfileSection() {
   ];
 
   return (
-    <section className="w-full bg-slate-50 py-12 md:py-20 px-4 font-sans">
+    <section className="w-full bg-slate-50 py-12 md:py-10 px-4 font-sans">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
@@ -106,7 +106,7 @@ export default function VillageProfileSection() {
           </div>
 
           {/* RIGHT — MAP CARD */}
-          <div className="h-full min-h-[500px] bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden flex flex-col">
+          <div className="h-full min-h-[400px] border bg-white rounded-2xl shadow-xl  border-slate-100 overflow-hidden flex flex-col">
              
              {/* Map Header */}
              <div className="p-4 border-b border-slate-100 flex justify-between items-center bg-white">

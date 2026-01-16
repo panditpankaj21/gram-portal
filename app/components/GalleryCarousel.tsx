@@ -12,11 +12,13 @@ type Slide = {
 };
 
 const slides: Slide[] = [
-  { id: 1, src: "/gallery/image1.jpg", caption: "ग्रामपंचायत कार्यालय", subText: "प्रशासकीय इमारत" },
-  { id: 2, src: "/gallery/image2.jpg", caption: "ग्रामसभा", subText: "लोकसहभाग आणि चर्चा" },
-  { id: 3, src: "/gallery/image3.jpg", caption: "पाणीपुरवठा योजना", subText: "स्वच्छ पिण्याचे पाणी" },
-  { id: 4, src: "/gallery/image4.jpg", caption: "प्राथमिक आरोग्य केंद्र", subText: "आरोग्य सुविधा" },
-  { id: 5, src: "/gallery/image5.jpg", caption: "जिल्हा परिषद शाळा", subText: "शिक्षण हेच भविष्य" },
+  { id: 1, src: "/gallery/image1.jpg", caption: "ग्रामपंचायत कार्यालय", subText: "प्रशासकीय इमारत व मुख्यालय" },
+  { id: 2, src: "/gallery/image2.jpg", caption: "सुंदर बाग", subText: "निसर्गरम्य परिसर आणि लोकसहभाग" },
+  { id: 3, src: "/gallery/image3.jpg", caption: "पाणीपुरवठा योजना", subText: "स्वच्छ व मुबलक पिण्याचे पाणी" },
+  { id: 4, src: "/gallery/image4.jpg", caption: "जिल्हा परिषद शाळा", subText: "गुणवत्तापूर्ण शिक्षण सुविधा" },
+  { id: 5, src: "/gallery/image5.jpg", caption: "अभियान", subText: "मुख्यमंत्री समृद्ध पंचायतराज अभियान" },
+  { id: 6, src: "/gallery/image6.jpg", caption: "शेत शिवार", subText: "कृषी समृद्धी आणि हिरवळ" },
+  { id: 7, src: "/gallery/image7.jpg", caption: "अंगणवाडी", subText: "बाल विकास व पोषण केंद्र" },
 ];
 
 export default function HeroCarousel() {
@@ -51,7 +53,7 @@ export default function HeroCarousel() {
 
   return (
     <div 
-      className="relative w-full aspect-video sm:aspect-[16/7] md:aspect-[21/9] bg-slate-900 overflow-hidden shadow-2xl group"
+      className="relative w-full aspect-video sm:aspect-video md:aspect-video bg-slate-900 overflow-hidden shadow-2xl group"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >

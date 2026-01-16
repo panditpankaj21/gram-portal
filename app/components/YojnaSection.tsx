@@ -33,7 +33,7 @@ const yojanas = [
 
 export default function YojanaSection() {
   return (
-    <section className="relative w-full bg-slate-50 py-16 px-4 sm:px-8 font-sans overflow-hidden">
+    <section className="relative w-full bg-slate-50 py-10 px-4 sm:px-8 font-sans overflow-hidden">
       
       {/* Background Decoration (Subtle Grid) */}
       <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#e5e7eb 1px, transparent 1px)', backgroundSize: '24px 24px', opacity: 0.5 }}></div>
