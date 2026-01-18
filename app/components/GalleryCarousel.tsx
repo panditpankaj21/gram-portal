@@ -53,7 +53,7 @@ export default function HeroCarousel() {
 
   return (
     <div 
-      className="relative w-full aspect-video sm:aspect-video md:aspect-video bg-slate-900 overflow-hidden shadow-2xl group"
+      className="relative w-full aspect-video h-video sm:h-[65vh] lg:h-[75vh] bg-slate-900 overflow-hidden shadow-2xl group"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -70,12 +70,12 @@ export default function HeroCarousel() {
             src={slide.src}
             alt={slide.caption}
             fill
-            className="object-cover object-center"
+            className=" md:object-fill"
             priority={index === 0} // Only prioritize LCP image
           />
           
           {/* Overlay Gradient (Better Text Contrast) */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-black/10" />
         </div>
       ))}
 

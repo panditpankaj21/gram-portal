@@ -80,7 +80,7 @@ export default function ContactPage() {
                    <div>
                       <h3 className="font-bold text-slate-800">ई-मेल पत्ता</h3>
                       <p className="text-slate-600 text-sm">
-                        gpsonoli@gmail.com
+                        gpsonoli12@gmail.com
                       </p>
                    </div>
                 </div>

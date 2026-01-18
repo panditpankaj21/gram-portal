@@ -18,7 +18,7 @@ const rtiOfficer = {
   role: "ग्राम पंचायत अधिकारी (जन माहिती अधिकारी)",
   address: "सोनोली, ता.काटोल, जिल्हा- नागपूर",
   phone: "9923620736",
-  email: "gpsonoli@gmail.com",
+  email: "gpsonoli12@gmail.com ",
 };
 
 const appellateAuthority = {

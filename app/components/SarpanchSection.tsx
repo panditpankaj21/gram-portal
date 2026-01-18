@@ -88,7 +88,7 @@ export default function VillageProfileSection() {
                       </div>
                       <div className="text-sm">
                          <p className="opacity-70 text-xs uppercase font-bold">ईमेल</p>
-                         <a href="mailto:gpsonoli@gmail.com" className="font-semibold hover:text-orange-300 transition">gpsonoli@gmail.com</a>
+                         <a href="mailto:gpsonoli@gmail.com" className="font-semibold hover:text-orange-300 transition">gpsonoli12@gmail.com </a>
                       </div>
                    </div>
                    <div className="w-px h-10 bg-white/20 hidden sm:block"></div>
