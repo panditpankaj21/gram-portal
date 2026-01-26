@@ -101,12 +101,12 @@ export default function Footer() {
             </h3>
             <div className="grid grid-cols-3 gap-2">
               {[
-                { src: "/logos/Swacch-Bharat.png", alt: "Swachh Bharat" },
                 { src: "/logos/Digital-India.png", alt: "Digital India" },
                 { src: "/logos/beti-bacho.png", alt: "Beti Bachao" },
-                { src: "/logos/satyamev.png", alt: "Satyamev Jayate" },
-                { src: "/logos/azadi.png", alt: "Azadi Ka Amrit Mahotsav" },
-                { src: "/ladli.png", alt: "Ladli bahin yojna" },
+                { src: "/logos/ladli.png", alt: "Ladli bahin yojna" },
+                { src: "/logos/mspra.jpg", alt: "MSPRA" },
+                { src: "/logos/vasundhara.jpg", alt: "maazi Vasundhara" },
+                { src: "/logos/panchayatiraj.jpg", alt: "Panchayati raj" },
               ].map((logo, idx) => (
                 <div key={idx} className="bg-white p-1 rounded-md flex items-center justify-center h-14 w-full shadow-sm hover:scale-105 transition-transform">
                   <Image
@@ -142,14 +142,26 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-1 md:gap-2 text-center md:text-right">
-             <span>Developed by</span>
-             <a 
-               href="#" 
-               className="flex items-center gap-1.5 text-orange-400 hover:text-orange-300 transition-colors font-semibold"
-             >
-               pkp and vw
-               <ExternalLink size={12} />
-             </a>
+            <span>Developed by</span>
+            <div className="flex items-center gap-1.5 font-semibold">
+              <a 
+                href="mailto:pkp20022@gmail.com" 
+                className="flex items-center gap-1 text-orange-400 hover:text-orange-300 transition-colors"
+                title="Email PKP"
+              >
+                pkp
+                <ExternalLink size={12} className="opacity-70" />
+              </a>
+              <span className="text-slate-400 font-normal mx-0.5">and</span>
+              <a 
+                href="mailto:vaibhavwnd@gmail.com" 
+                className="flex items-center gap-1 text-orange-400 hover:text-orange-300 transition-colors"
+                title="Email VW"
+              >
+                vw
+                <ExternalLink size={12} className="opacity-70" />
+              </a>
+            </div>
           </div>
 
         </div>

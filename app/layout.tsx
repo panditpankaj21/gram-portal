@@ -13,7 +13,7 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Grampanchayat Sonoli | Official Portal", // Better title
+  title: "Grampanchayat Sonoli | Official Portal", 
   description: "Official website of Grampanchayat Sonoli, Nagpur",
 };
 

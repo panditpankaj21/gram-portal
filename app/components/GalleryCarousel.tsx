@@ -14,10 +14,10 @@ type Slide = {
 const slides: Slide[] = [
   { id: 1, src: "/gallery/image1.jpg", caption: "ग्रामपंचायत कार्यालय", subText: "प्रशासकीय इमारत व मुख्यालय" },
   { id: 2, src: "/gallery/image2.jpg", caption: "सुंदर बाग", subText: "निसर्गरम्य परिसर आणि लोकसहभाग" },
-  { id: 3, src: "/gallery/image3.jpg", caption: "पाणीपुरवठा योजना", subText: "स्वच्छ व मुबलक पिण्याचे पाणी" },
+  { id: 3, src: "/gallery/image13.jpg", caption: "पाणीपुरवठा योजना", subText: "स्वच्छ व मुबलक पिण्याचे पाणी" },
   { id: 4, src: "/gallery/image4.jpg", caption: "जिल्हा परिषद शाळा", subText: "गुणवत्तापूर्ण शिक्षण सुविधा" },
   { id: 5, src: "/gallery/image5.jpg", caption: "अभियान", subText: "मुख्यमंत्री समृद्ध पंचायतराज अभियान" },
-  { id: 6, src: "/gallery/image6.jpg", caption: "शेत शिवार", subText: "कृषी समृद्धी आणि हिरवळ" },
+  { id: 6, src: "/gallery/image6.jpg", caption: "परसबाग", subText: "नैसर्गिक भाजीपाला लागवड" },
   { id: 7, src: "/gallery/image7.jpg", caption: "अंगणवाडी", subText: "बाल विकास व पोषण केंद्र" },
 ];
 

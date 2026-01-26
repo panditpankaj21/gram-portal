@@ -14,15 +14,28 @@ import {
 // Data Structure (Supports Categories)
 const galleryData = [
   { src: "/gallery/image1.jpg", category: "विकास कामे", title: "ग्रामपंचायत इमारत" },
-  { src: "/gallery/image2.jpg", category: "कार्यक्रम", title: "ग्रामसभा बैठक" },
+  { src: "/gallery/image2.jpg", category: "विकास कामे", title: "परसबाग" },
   { src: "/gallery/image3.jpg", category: "सुविधा", title: "पाणीपुरवठा टाकी" },
-  { src: "/gallery/image4.jpg", category: "सुविधा", title: "आरोग्य केंद्र" },
-  { src: "/gallery/image5.jpg", category: "विकास कामे", title: "नवीन सिमेंट रस्ता" },
-  // Duplicating for demo (Remove in production)
-  { src: "/gallery/image1.jpg", category: "इतर", title: "शाळा परिसर" },
+  { src: "/gallery/image4.jpg", category: "सुविधा", title: "जिल्हा परिषद शाळा" },
+  { src: "/gallery/image5.jpg", category: "विकास कामे", title: "अभियान" },
+  { src: "/gallery/image6.jpg", category: "इतर", title: "परसबाग" },
+  { src: "/gallery/image8.jpg", category: "धार्मिक स्थळे", title: "बुद्ध विहार" },
+  { src: "/gallery/image9.jpg", category: "धार्मिक स्थळे", title: "मस्जिद" },
+  { src: "/gallery/image10.jpg", category: "इतर", title: "शिलालेख" },
+  { src: "/gallery/image11.jpg", category: "सुविधा", title: "पशुवैद्यकीय दवाखाना" },
+  { src: "/gallery/image12.jpg", category: "सुविधा", title: "शाळा परिसर" },
+  { src: "/gallery/image14.jpg", category: "धार्मिक स्थळे", title: "हनुमान मंदिर" },
+  { src: "/gallery/image15.jpg", category: "विकास कामे", title: "भूमिगत नाली" },
+  { src: "/gallery/image16.jpg", category: "सुविधा", title: "तक्रार पेटी" },
+  { src: "/gallery/image17.jpg", category: "कार्यक्रम", title: "वृक्षारोपण" },
+  { src: "/gallery/image18.jpg", category: "इतर", title: "कार्यालय" },
+  { src: "/gallery/image19.jpg", category: "विकास कामे", title: "सिमेंट बंधारे" },
+  { src: "/gallery/image20.jpg", category: "इतर", title: "स्वच्छ भारत अभियान" },
+  { src: "/gallery/image21.jpg", category: "धार्मिक स्थळे", title: "विठ्ठल-रुक्मिणी मंदिर" },
+  { src: "/gallery/image22.jpg", category: "इतर", title: "अंगणवाडी" },
 ];
 
-const categories = ["सर्व", "विकास कामे", "कार्यक्रम", "सुविधा"];
+const categories = ["सर्व", "विकास कामे", "कार्यक्रम", "सुविधा", "धार्मिक स्थळे", "इतर"];
 
 export default function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState("सर्व");

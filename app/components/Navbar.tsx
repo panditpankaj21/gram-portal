@@ -49,10 +49,10 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
           
           {/* --- LEFT: LOGO & NAME --- */}
-          <div className="flex flex-row items-center justify-center gap-1 md:gap-6 text-center md:text-left w-full md:w-auto">
+          <div className="flex flex-row items-center justify-center md:gap-6 text-center md:text-left w-full md:w-auto">
              
              {/* LOGO IMAGE */}
-             <div className="relative h-22 w-22 md:h-28 md:w-28 shrink-0">
+             <div className="relative h-22 w-22 md:h-28 md:w-28">
                 <Image 
                   src="/logos/panchayat.jpg" // Make sure this file exists in public/logos/
                   alt="Gram Panchayat Logo"
@@ -89,7 +89,7 @@ export default function Navbar() {
                    src="/logos/Swacch-Bharat.png" 
                    alt="Swachh Bharat" 
                    fill
-                   className="object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                   className="object-contain hover:grayscale-0 transition-all duration-300"
                  />
              </div>
           </div>
